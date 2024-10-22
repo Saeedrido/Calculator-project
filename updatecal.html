@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      calculator
+    </title>
+
+   <link rel="stylesheet" href="updatecalculator.css">
+  </head>
+  <body>
+
+    <!-- Code changes are at the bottom. -->
+
+
+   <p class="js-message calculation"></p>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="numbers">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      " class="numbers">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="numbers">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="add-sub-div-mul">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="numbers">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      " class="numbers">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="numbers">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+       " class="add-sub-div-mul">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      " class="numbers">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      " class="numbers">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="numbers">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="add-sub-div-mul">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="numbers">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      " class="numbers">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+       
+
+        // Remember to save the calculation here.
+        updateScoreElement();
+
+        localStorage.setItem('calculation', calculation);
+       
+      " class="numbers">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="add-sub-div-mul">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+       
+
+        // Remember to save the calculation here.
+        updateScoreElement();
+
+        localStorage.setItem('calculation', calculation);
+      
+      " class="clear">Clear</button>
+    </p>
+
+    <script src="updatecalculator.js">
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body{
+  background-color: black;
+ font-family: arial;
+display: grid;
+place-content: center;
+ height: 100vh;
+ }
+
+ 
+ .calculation{
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+   margin-bottom: 5px;
+  }
+ 
+
+
+  .numbers{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+   margin-right: 5px;  
+  }
+
+  .add-sub-div-mul{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: none;
+   background-color: rgb(254, 160, 10);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .clear{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(46,45,45);
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+  }
